@@ -77,7 +77,7 @@ export const Contact = () => {
             </p>
             
             <div className="space-y-4 mb-10">
-              <a href="mailto:abdallahkhattab33@gmail.com" className="block text-2xl font-semibold text-indigo-400 hover:text-white transition-colors">
+              <a href="mailto:abdallahkhattab33@gmail.com" className="block text-base md:text-2xl font-semibold text-indigo-400 hover:text-white transition-colors">
                 abdallahkhattab33@gmail.com
               </a>
             </div>

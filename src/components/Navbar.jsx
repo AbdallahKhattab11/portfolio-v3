@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX } from 'react-icons/fi';
-import { NAV_ITEMS } from '../constants';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiMenu, FiX } from "react-icons/fi";
+import { NAV_ITEMS } from "../constants";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,25 +11,30 @@ export const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-slate-900/80 backdrop-blur-md border-b border-slate-800 py-4 shadow-lg'
-          : 'bg-transparent py-6'
+          ? "bg-slate-900/80 backdrop-blur-md border-b border-slate-800 py-4 shadow-lg"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold tracking-tighter font-mono group">
+        <a
+          href="#"
+          className="text-2xl font-bold tracking-tighter font-mono group"
+        >
           <span className="text-white">A</span>
           <span className="text-indigo-500">.</span>
           <span className="text-white">K</span>
-          <span className="text-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">.</span>
+          <span className="text-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            .
+          </span>
         </a>
 
         {/* Desktop Menu */}
@@ -67,7 +72,7 @@ export const Navbar = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-slate-900 border-b border-slate-800 overflow-hidden"
           >
@@ -77,7 +82,17 @@ export const Navbar = () => {
                   key={item.label}
                   href={item.href}
                   className="text-lg font-medium text-slate-300 hover:text-indigo-400 transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false); 
+
+                    setTimeout(() => {
+                      const element = document.querySelector(item.href);
+                      if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }, 300); 
+                  }}
                 >
                   {item.label}
                 </a>
@@ -85,7 +100,14 @@ export const Navbar = () => {
               <a
                 href="#contact"
                 className="inline-block text-center w-full px-5 py-3 text-base font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  const element = document.querySelector("#contact");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
                 Let's Talk
               </a>

@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 @theme {
   --font-sans: "Outfit", sans-serif;
   --font-mono: "Space Grotesk", monospace;
@@ -12,16 +10,28 @@
 }
 
 /* Global styles preserved from index.html */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on navbar height */
+}
 body {
   background-color: var(--color-dark);
   color: #f8fafc;
 }
 /* Custom scrollbar */
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #1e293b; }
-::-webkit-scrollbar-thumb { background: #475569; border-radius: 5px; }
-::-webkit-scrollbar-thumb:hover { background: #64748b; }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
 
 /* Utility: line-clamp-3 (replaces plugin) */
 .line-clamp-3 {
