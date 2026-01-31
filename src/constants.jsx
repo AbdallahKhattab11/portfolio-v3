@@ -8,8 +8,9 @@ import finexo from "./assets/projectsData/Finexo/finexo-img.png";
 import cyborg from "/src/assets/projectsData/cyborg/cyborg-img.png";
 import multiStepForm from "./assets/projectsData/Multi-Step-Form/Multi-step-form-img.png";
 import productListWithCart from "./assets/projectsData/Product-list-with-cart/Product-list-with-cart-img.png";
-
-
+import pixelio from "./assets/projectsData/Pixel.io/pixel io.png";
+import buildify from "./assets/projectsData/Buildify/buildify.png";
+import nikeShoes from "./assets/projectsData/Nike-shoes/nike-shoes.png";
 export const NAV_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
@@ -45,7 +46,7 @@ export const PROJECTS = [
     title: "Finexo",
     description:
       "Finexo - Crypto Trading Platform With React And Modern Technologies.",
-    tags: ["React", "Redux Toolkit", "Stripe", "Node.js"],
+    tags: ["React", "React Router", "Tailwind", "Swiper.js"],
     imageUrl: finexo,
     githubUrl: "https://github.com/AbdallahKhattab11/Finexo_template",
     liveUrl: "https://finexo-react-tailwind.netlify.app/",
@@ -82,6 +83,39 @@ export const PROJECTS = [
     imageUrl: productListWithCart,
     githubUrl: "https://github.com/AbdallahKhattab11/Product-list-with-cart",
     liveUrl: "https://abdallahkhattab11.github.io/Product-list-with-cart/",
+    featured: true,
+  },
+  {
+    id: 7,
+    title: "Pixel.io",
+    description:
+      "A creative digital agency helping startups and businesses grow through thoughtful design, scalable development and performance-driven strategy.",
+    tags: ["React", "React icons", "Tailwind", "Framer Motion"],
+    imageUrl: pixelio,
+    githubUrl: "https://github.com/AbdallahKhattab11/Pixel.io",
+    liveUrl: "https://pixel-i0.netlify.app/",
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "Buildify",
+    description:
+      "Design, automate and deploy intelligent AI agents to power your products, workflows and business growth.",
+    tags: ["React", "React icons", "Tailwind", "Framer Motion"],
+    imageUrl: buildify,
+    githubUrl: "https://github.com/AbdallahKhattab11/Buildify",
+    liveUrl: "https://buildify-ai.netlify.app/",
+    featured: true,
+  },
+  {
+    id: 9,
+    title: "TIGRUN",
+    description:
+      "Discover the best Nike collection. Premium quality, best styles, and exclusive deals for men, women, and sports enthusiasts.",
+    tags: ["React", "React icons", "Tailwind", "Framer Motion", "LocalStorage"],
+    imageUrl: nikeShoes,
+    githubUrl: "https://github.com/AbdallahKhattab11/Nike-Shoes-Ecommerce",
+    liveUrl: "https://nike-shoes-ecommerce-site.netlify.app/",
     featured: true,
   },
 ];
