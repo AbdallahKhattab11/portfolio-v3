@@ -59,7 +59,7 @@ export const Hero = () => {
               </span>
             </a>
             <a
-              href="/public/Abdallah-khattab-cv-v3.pdf"
+              href="/Abdallah-khattab-cv-v3.pdf"
               download="Abdallah Khattab CV.pdf"
               className="px-8 py-4 bg-transparent border border-slate-700 text-white rounded-full font-semibold hover:bg-slate-800/50 transition-colors flex items-center justify-center gap-2"
             >
