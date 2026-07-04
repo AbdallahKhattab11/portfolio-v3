@@ -60,7 +60,7 @@ export const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "Swiper.js"],
     imageUrl: cyborg,
     githubUrl: "https://github.com/AbdallahKhattab11/Cyborg-Project",
-    liveUrl: "https://cyporg-project.netlify.app/",
+    liveUrl: "https://cyborg-project.vercel.app/",
     featured: true,
   },
   {
@@ -71,7 +71,7 @@ export const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: multiStepForm,
     githubUrl: "https://github.com/AbdallahKhattab11/Multi-step-form",
-    liveUrl: "https://abdallahkhattab11.github.io/Multi-step-form/",
+    liveUrl: "https://multi-step-form-phi-taupe.vercel.app/",
     featured: true,
   },
   {
@@ -82,7 +82,7 @@ export const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "JSON"],
     imageUrl: productListWithCart,
     githubUrl: "https://github.com/AbdallahKhattab11/Product-list-with-cart",
-    liveUrl: "https://abdallahkhattab11.github.io/Product-list-with-cart/",
+    liveUrl: "https://product-list-with-cart-rho-nine.vercel.app/",
     featured: true,
   },
   {
