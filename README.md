@@ -6,7 +6,7 @@ Showcase of my work, skills, and experience as a Frontend Developer. Built with 
 
 ## Live Demo
 
-- **Website:** [abdallah-khattab-v3.netlify.app](https://abdallah-khattab-v3.netlify.app/)
+- **Website:** [abdallah-khattab-v3.netlify.app](https://abdallah-khattab-v3.vercel.app/)
 - **Preview:**
 
 ```html
