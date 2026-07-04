@@ -27,7 +27,7 @@ export const PROJECTS = [
     tags: ["React", "React Router", "Tailwind", "Swiper.js"],
     imageUrl: estatein,
     githubUrl: "https://github.com/AbdallahKhattab11/EStatein-project",
-    liveUrl: "https://estatein-real-state.netlify.app/",
+    liveUrl: "https://e-statein-project.vercel.app/",
     featured: true,
   },
   {
@@ -38,7 +38,7 @@ export const PROJECTS = [
     tags: ["React", "Tailwind", "Framer Motion", "Swiper.js"],
     imageUrl: modernWebsite,
     githubUrl: "https://github.com/AbdallahKhattab11/Modern-website",
-    liveUrl: "https://modern-website-reacttailwind.netlify.app/",
+    liveUrl: "https://modern-website-hazel.vercel.app/",
     featured: true,
   },
   {
@@ -49,7 +49,7 @@ export const PROJECTS = [
     tags: ["React", "React Router", "Tailwind", "Swiper.js"],
     imageUrl: finexo,
     githubUrl: "https://github.com/AbdallahKhattab11/Finexo_template",
-    liveUrl: "https://finexo-react-tailwind.netlify.app/",
+    liveUrl: "https://finexo-template-five.vercel.app/",
     featured: true,
   },
   {
@@ -93,7 +93,7 @@ export const PROJECTS = [
     tags: ["React", "React icons", "Tailwind", "Framer Motion"],
     imageUrl: pixelio,
     githubUrl: "https://github.com/AbdallahKhattab11/Pixel.io",
-    liveUrl: "https://pixel-i0.netlify.app/",
+    liveUrl: "https://pixel-io-umber.vercel.app/",
     featured: true,
   },
   {
@@ -104,7 +104,7 @@ export const PROJECTS = [
     tags: ["React", "React icons", "Tailwind", "Framer Motion"],
     imageUrl: buildify,
     githubUrl: "https://github.com/AbdallahKhattab11/Buildify",
-    liveUrl: "https://buildify-ai.netlify.app/",
+    liveUrl: "https://buildify-azure.vercel.app/",
     featured: true,
   },
   {
@@ -115,7 +115,7 @@ export const PROJECTS = [
     tags: ["React", "React icons", "Tailwind", "Framer Motion", "LocalStorage"],
     imageUrl: nikeShoes,
     githubUrl: "https://github.com/AbdallahKhattab11/Nike-Shoes-Ecommerce",
-    liveUrl: "https://nike-shoes-ecommerce-site.netlify.app/",
+    liveUrl: "https://nike-shoes-ecommerce-one.vercel.app/",
     featured: true,
   },
 ];
